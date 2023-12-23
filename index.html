@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+      <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
+    
+    <!--
+This code is a set of links to CSS and JavaScript files hosted on a third-party server (bootstrapcdn.com). These files are used to style and enhance the appearance and functionality of the webpage, specifically the navigation bar, tables, and forms.
+
+The specific files included are:
+
+https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css: This file contains the CSS code for the Bootstrap framework, which is used to style the navigation bar, tables, and forms.
+https://code.jquery.com/jquery-3.7.1.min.js: This file contains the JavaScript code for the jQuery library, which is used to provide functionality such as animating elements on the page and validating form input.
+https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js: This file contains the JavaScript code for the Popper library, which is used to position tooltips and popovers correctly.
+https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js: This file contains the JavaScript code for the Bootstrap framework, which is used to provide additional functionality such as dropdown menus and modal windows.
+
+By including these files on the webpage, the developer is able to take advantage of the built-in styles and functionality provided by Bootstrap, without having to write and maintain the code themselves. This makes it easier to create a consistent and high-quality user experience across different devices and browsers.
+
+    -->
+    
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>  
+
+    <!--This code is a CSS style sheet that defines the appearance of the section element on the webpage. 
+        The section element is used to divide the content on the page into different sections, such as the header, main content, and footer.
+
+    -->
+    <style>
+        section{
+
+            padding: 40px 0; 
+            margin: 20px 0;
+            background: green;
+        }
+        </style>   
+</head>
+<body>
+
+   <!-- This code defines the header of the webpage, that includes a nav bar 
+    with a link to the home page and a link to the current page. The nav bar 
+    is styled using the Bootstrap-->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">NFL</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav sm-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="PG2.html"> Content<span class="sr-only"></span></a>
+                    </li>               
+                </ul>            
+                </div>
+            </div>
+          </nav>
+    </header>
+
+  
+<!-- This code defines the main content section of the webpage, that includes a table 
+with the top 3 NFL teams, a form for entering the user's information, and some buttons. 
+The table and form are styled using the Bootstrap-->
+
+<section>
+    <div class="container">
+    <div class="row">
+            <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-6" id="tcontent">
+                <h3>NFL Teams</h3>
+                        <p>Here are the Top 3 Teams</p>            
+                        <table class="table table-dark table-hover">
+                          <thead>
+                            <tr>
+                               <th>Conference</th>
+                                <th>Team Name</th>
+                                <th>Record</th>
+                                <th>Conference Standings</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>NFC</td>
+                                <td>San Fransico 49ers</td>
+                                <td>11-3</td>
+                                <td>1st in NFC</td>
+                            </tr>
+                            <tr>
+                                <td>AFC</td>
+                                <td>Baltimore Ravens</td>
+                                <td>11-3</td>
+                                <td>1st in AFC </td>
+                            </tr>
+                            <tr>
+                                <td>NFC</td>
+                                <td>Dallas Cowboys</td>
+                                <td>10-4</td>
+                                <td>2nd in NFC</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                   
+    <!--This code defines the form that will be displayed on the webpage. THis form includes three input fields for collecting the user's first name
+,last name & team name, this form includes a submit button. The form has been stylized using bootstrap.-->                  
+                    </div>
+                    <div class="col-md-6" id="formcontent">
+                        <h2>Enter Your Information</h2>
+                        <form>
+                            <div class="form-group">
+                              <label>First Name</label>
+                              <input type="text" class="form-control" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" class="form-control" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <label>Favorite Team</label>
+                                <input type="text" class="form-control" placeholder="Team">
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn btn-dark">Submit</button>
+                       </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+</html>
+
+<!-- This is the end of the page -->
+
